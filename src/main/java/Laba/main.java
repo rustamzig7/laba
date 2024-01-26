@@ -11,6 +11,7 @@ public class RandomNumberGenerator {
 	
 }
 
+
 class BubbleSort {
     public void sortArray(int[] array) {
         int n = array.length;
@@ -23,6 +24,18 @@ class BubbleSort {
                 }
             }
         }
+    }
+}
+
+
+class ArrayCreator {
+    public int[] createRandomArray() {
+        int[] array = new int[12];
+        RandomNumberGenerator rng = new RandomNumberGenerator();
+        for (int i = 0; i < array.length; i++) {
+            array[i] = rng.generateRandomNumber();
+        }
+        return array;
     }
 }
 
