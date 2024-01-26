@@ -11,6 +11,7 @@ public class RandomNumberGenerator {
 	
 }
 
+
 public class main {
     public static void main(String[] args) {
         ArrayCreator arrayCreator = new ArrayCreator();
@@ -27,6 +28,16 @@ public class main {
         for (int i : randomArray) {
             System.out.print(i + " ");
         }
+
+class ArrayCreator {
+    public int[] createRandomArray() {
+        int[] array = new int[12];
+        RandomNumberGenerator rng = new RandomNumberGenerator();
+        for (int i = 0; i < array.length; i++) {
+            array[i] = rng.generateRandomNumber();
+        }
+        return array;
+
     }
 }
 
