@@ -1,3 +1,3 @@
-# laba 1
+# laba 2
 Вариант 8
 # commit
