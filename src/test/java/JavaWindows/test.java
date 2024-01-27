@@ -1,3 +1,40 @@
+package JavaWindows;
+
+import static org.junit.Assert.*;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+
+
+
+public class test {
+@Test
+    public void testCreateRandomArray() {
+        ArrayCreator creator = new ArrayCreator();
+        int[] randomArray = creator.createRandomArray();
+
+        // Test if the array has the correct length
+        assertEquals("Array length is not 12", 12, randomArray.length);
+
+        // Test if the array contains numbers within the expected range
+        for (int number : randomArray) {
+            assertTrue("Number is outside the expected range", number >= 250 && number <= 700);
+        }
+    }@Test
+    public void testCreateRandomArray() {
+        ArrayCreator creator = new ArrayCreator();
+        int[] randomArray = creator.createRandomArray();
+
+        // Test if the array has the correct length
+        assertEquals("Array length is not 12", 12, randomArray.length);
+
+        // Test if the array contains numbers within the expected range
+        for (int number : randomArray) {
+            assertTrue("Number is outside the expected range", number >= 250 && number <= 700);
+        }
+    }
+
 @Test
     public void testCreateRandomArray() {
         ArrayCreator creator = new ArrayCreator();
@@ -24,3 +61,5 @@
         assertEquals("Array is not sorted", sortedArray, unsortedArray);
     }
 }
+
+
